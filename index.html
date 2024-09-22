@@ -14,46 +14,78 @@
 
 	<body>
 		<h1>Volunteer Form</h1>
-		<form name="My Info" action="/action_page.php" method="post" target="_blank">
+		<form action="/action_page.php" method="post">
 			<fieldset>
 				<legend>My Info</legend>
-				<label for="fname">first name:</label>
-				<input type="text" id="fname" name="fname">
-				<label for="lname">last name:</label>
-				<input type="text" id="lname" name="lname">
-				<label for="phone">phone:</label>
-				<input type="text" id="phone" name="phone">
-				<label for="email">email:</label>
-				<input type="text" id="email" name="email">
-				<label>Gender:</label>
-				<input type="radio" id="male" name="Male">
-				<input type="radio" id="female" name="Female">
-				<label for="age">Age:</label>
-				<select id="age" name="age">
-					<option value="uage">Under Age</option>
-					<option value="oage">Over Age</option>
-				</select>
+				<div>
+					<label for="fname">first name:</label>
+					<input type="text" id="fname" name="fname">
+				</div>
+				<div>
+					<label for="lname">last name:</label>
+					<input type="text" id="lname" name="lname">
+				</div>
+				<div>
+					<label for="phone">phone:</label>
+					<input type="text" id="phone" name="phone">
+				</div>
+				<div>
+					<label for="email">email:</label>
+					<input type="text" id="email" name="email">
+				</div>
+				<input type="hidden" name="hidden_field" value="Hailie Jade Juliano">
+				<div><label>Gender:</label></div>
+				<div>
+					<label for="male">Male</label>
+					<input type="radio" id="male" name="Male">
+				</div>
+				<div>
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="Female">
+				</div>
+				<div>
+				<h5>Age:</h5>
+				</div>
+				<div>
+					<select id="age" name="age">
+						<option value="uage">Under Age</option>
+						<option value="oage">Over Age</option>
+					</select>
+				</div>
 			</fieldset>
 			<fieldset>
 				<legend>My Availability:</legend>
 				<h3>Days Available</h3>
-				<label for="sunday">Sunday</label>
-				<input type="checkbox" id="sunday" name="sunday" value="sunday">
-				<label for="monday">Monday</label>
-				<input type="checkbox" id="monday" name="monday" value="monday">
-				<label for="tuesday">Tuesday</label>
-				<input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
-				<label for="wednesday">Wednesday</label>
-				<input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
-				<label for="thursday">Thursday</label>
-				<input type="checkbox" id="thursday" name="thursday" value="thursday">
-				<label for="friday">Friday</label>
-				<input type="checkbox" id="friday" name="friday" value="friday">
-				<label for="saturday">Saturday</label>
-				<input type="checkbox" id="saturday" name="saturday" value="saturday">
-				
+				<div>
+					<label for="sunday">Sunday</label>
+					<input type="checkbox" id="sunday" name="sunday" value="sunday">
+				</div>
+				<div>
+					<label for="monday">Monday</label>
+					<input type="checkbox" id="monday" name="monday" value="monday">
+				</div>
+				<div>
+					<label for="tuesday">Tuesday</label>
+					<input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+				</div>
+				<div>
+					<label for="wednesday">Wednesday</label>
+					<input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+				</div>	
+				<div>
+					<label for="thursday">Thursday</label>
+					<input type="checkbox" id="thursday" name="thursday" value="thursday">
+				</div>
+				<div>
+					<label for="friday">Friday</label>
+					<input type="checkbox" id="friday" name="friday" value="friday">
+				</div>
+				<div>				
+					<label for="saturday">Saturday</label>
+					<input type="checkbox" id="saturday" name="saturday" value="saturday">
+				</div>
 				<h3>Comments</h3>
-				<textarea name="comments" rows="10" cols="30"></textarea>
+				<textarea name="comments"></textarea>
 			</fieldset>
 			<input type="submit" value="Submit Query">
 		</form>
